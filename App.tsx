@@ -1,10 +1,9 @@
-import * as Font from "expo-font";
+import "react-native-gesture-handler";
 import AppLoading from "expo-app-loading";
 import React, { useState } from "react";
-import { StyleSheet, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 
-import BottomTabs from "./src/navigation/BottomTabs";
+import Drawer from "./src/navigation/drawer";
 import UseFonts from "./src/assets/fonts/UseFonts";
 
 const App = () => {
@@ -25,7 +24,7 @@ const App = () => {
   }
   return (
     <NavigationContainer>
-      <BottomTabs />
+      <Drawer />
     </NavigationContainer>
   );
 };
